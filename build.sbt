@@ -25,7 +25,9 @@ lazy val hyperflowSimulator = (project in file(".")).
       "com.typesafe.akka" %% "akka-http-spray-json" % versions.akkaHttp,
       "com.typesafe.akka" %% "akka-slf4j" % versions.akka,
       "ch.qos.logback" % "logback-classic" % "1.2.3",
-
-      "org.scalatest" %% "scalatest" % "3.0.2" % "test"
+      "org.cloudsimplus" % "cloudsim-plus" % "2.4.0",
+      "redis.clients" % "jedis" % "2.9.0",
+      "org.scalatest" %% "scalatest" % "3.0.2" % "test",
+      "org.scala-lang.modules" %% "scala-java8-compat" % "0.8.0"
     )
   )
